@@ -1,0 +1,5 @@
+name: ${name}
+main: ${package}.${name}
+version: ${version}
+author: KaiNoMood
+depend: [QuickShop, WorldGuard]
