@@ -25,7 +25,7 @@ public class QuickShopWG extends JavaPlugin implements Listener {
 	void onShopPreCreate(ShopPreCreateEvent event) {
                RegionContainer rc =  WorldGuard.getInstance().getPlatform().getRegionContainer();
                RegionManager rm = rc.get(BukkitAdapter.adapt(event.getLocation().getWorld()));
-	       LocalPlayer player = WorldGuardPlugin.inst().wrapPlayer(event.getPlayer());
+	           LocalPlayer player = WorldGuardPlugin.inst().wrapPlayer(event.getPlayer());
                ApplicableRegionSet set = rm.getApplicableRegions( player.getLocation().toVector().toBlockPoint());
 
 		if (set == null ||set.size()==0  ) {
